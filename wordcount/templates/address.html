@@ -1,0 +1,7 @@
+<h1>당신의 연락처</h1>
+{% for name,phone in address_dic %}
+    {{name}} : {{phone}}<br/>
+{%endfor%}
+
+<br/>
+<a href="{%url 'home'%}">다시 하기</a>

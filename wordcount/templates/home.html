@@ -1,0 +1,16 @@
+<h1>안녕하세요, 여기서 글자를 세세요!</h1>
+
+<a href="/about">ABOUT</a>
+
+<form action="{%url 'result' %}">
+    <textarea cols="40" rows="15" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!">
+</form>
+
+<h1>이곳은 연락처를 입력하는 곳!</h1>
+<form action="{%url 'address' %}">
+    이름 : <input type="string" name="name" /><br/><br/>
+    연락처 : <input type="string" name="phoneNumber"/><br/><br/>
+    <input type="submit" value="연락처 저장하기"/>
+</form>

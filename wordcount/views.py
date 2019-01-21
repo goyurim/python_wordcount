@@ -21,7 +21,11 @@ def result(request):
             #add to dictionary
             word_dictionary[word] = 1
 
-    return render(request, 'result.html', {'full': text, 'total': len(words), 'dictionary': word_dictionary.items()} ) #{'key': value} 사전형 객체
+    return render(request, 'result.html', {'full': text, 
+                                           'total': len(words), 
+                                           'dictionary': word_dictionary.items()
+                                          }
+                 ) #{'key': value} 사전형 객체
 
 def address(request):
     address_dictionary = {}

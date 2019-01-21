@@ -23,8 +23,8 @@ def result(request):
 
     return render(request, 'result.html', {'full': text, 'total': len(words), 'dictionary': word_dictionary.items()} ) #{'key': value} 사전형 객체
 
-address_dictionary = {}
 def address(request):
+    address_dictionary = {}
     name = request.GET['name']
     phoneNum = request.GET['phoneNumber']
     address_dictionary[name] = phoneNum
